@@ -111,16 +111,77 @@
   </a> -->
   </div>
 
-    <section class="section has-text-centered">
+  <section class="section has-text-centered">
     <div class="container">
-      <img
-        src="figures/teaser.png"
-		width="65%"
-        class="main-figure"
-      />
-	<h2 class="subtitle" style="margin-top: 1rem;">
-		We present ProJo4D, a progressive joint optimization framework for estimating 4D representation and physical parameters of deformable objects from sparse multi-view video. ProJo4D significantly outperforms state-of-the-art inverse physics estimation algorithms, Spring-Gaus and GIC, which perform sequential optimization of scene geometry and physical parameters.
-	  </h2>
+      <div style="max-width: 900px; margin: 0 auto;">
+      <!-- Flex container: concept image, divider, and video grid -->
+      <div style="display: flex; align-items: center; margin-top: 1rem;">
+        <div style="flex: 1; overflow: hidden;">
+          <img
+            src="figures/teaser_left.png"
+          />
+        </div>
+
+        <!-- Vertical black divider -->
+        <!-- <div
+          style="
+            width: 4px;
+            background-color: #000;
+            margin: 0;
+            align-self: stretch;
+          "
+        ></div> -->
+
+        <!-- Video grid with headers and row labels -->
+        <div style="flex: 3; display: flex; flex-direction: column;">
+          <!-- Column headers -->
+          <div style="display: flex; margin-bottom: 0.5rem;">
+            <div style="width: 150px;"></div> <!-- placeholder for row labels alignment -->
+            <div style="flex: 1; text-align: center; font-weight: bold;">Ground Truth</div>
+            <div style="flex: 1; text-align: center; font-weight: bold;">ProJo4D</div>
+            <div style="flex: 1; text-align: center; font-weight: bold;">GIC</div>
+            <div style="flex: 1; text-align: center; font-weight: bold;">Spring-Gaus</div>
+          </div>
+
+          <!-- First row: Novel-view Rendering -->
+          <div style="display: flex; align-items: center;">
+            <div style="width: 150px; font-weight: bold; text-align: right; padding-right: 0.5rem;">
+              Novel-view Rendering
+            </div>
+            <!-- Videos -->
+            <div style="flex: 1; text-align: center;">
+              <video autoplay muted loop playsinline style="width: 100%; max-width: 120px; background: #000;">
+                <source src="static/videos/cream_3.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div style="flex: 1; text-align: center;">
+              <video autoplay muted loop playsinline style="width: 100%; max-width: 120px; background: #000;">
+                <source src="static/videos/cream_3_ours.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div style="flex: 1; text-align: center;">
+              <video autoplay muted loop playsinline style="width: 100%; max-width: 120px; background: #000;">
+                <source src="static/videos/cream_3_gic.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div style="flex: 1; text-align: center;">
+              <video autoplay muted loop playsinline style="width: 100%; max-width: 120px; background: #000;">
+                <source src="static/videos/cream_3_sg.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      </div>
+
+		<h2 class="subtitle" style="margin-top: 1rem;">
+			We present ProJo4D, a progressive joint optimization framework for estimating 4D representation and physical parameters of deformable objects from sparse multi-view video. ProJo4D significantly outperforms state-of-the-art inverse physics estimation algorithms, Spring-Gaus and GIC, which perform sequential optimization of scene geometry and physical parameters.
+		</h2>
     </div>
   </section>
 
