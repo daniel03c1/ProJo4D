@@ -164,25 +164,25 @@
               <!-- Row 1 videos -->
               <div style="display: flex; align-items: center; margin-bottom: 0.5rem;">
                 <div style="flex: 1; text-align: center;">
-                  <video autoplay muted loop playsinline style="width: 100%; max-width: 120px; background: #000;">
+                  <video class="teaser-video" autoplay muted loop playsinline style="width: 100%; max-width: 120px; background: #000;">
                     <source src="static/videos/cream_3.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
                 </div>
                 <div style="flex: 1; text-align: center;">
-                  <video autoplay muted loop playsinline style="width: 100%; max-width: 120px; background: #000;">
+                  <video class="teaser-video" autoplay muted loop playsinline style="width: 100%; max-width: 120px; background: #000;">
                     <source src="static/videos/cream_3_ours.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
                 </div>
                 <div style="flex: 1; text-align: center;">
-                  <video autoplay muted loop playsinline style="width: 100%; max-width: 120px; background: #000;">
+                  <video class="teaser-video" autoplay muted loop playsinline style="width: 100%; max-width: 120px; background: #000;">
                     <source src="static/videos/cream_3_gic.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
                 </div>
                 <div style="flex: 1; text-align: center;">
-                  <video autoplay muted loop playsinline style="width: 100%; max-width: 120px; background: #000;">
+                  <video class="teaser-video" autoplay muted loop playsinline style="width: 100%; max-width: 120px; background: #000;">
                     <source src="static/videos/cream_3_sg.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
@@ -191,25 +191,25 @@
               <!-- Row 2 videos -->
               <div style="display: flex; align-items: center;">
                 <div style="flex: 1; text-align: center;">
-                  <video autoplay muted loop playsinline style="width: 100%; max-width: 120px; background: #000;">
+                  <video class="teaser-video" autoplay muted loop playsinline style="width: 100%; max-width: 120px; background: #000;">
                     <source src="static/videos/cream_8.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
                 </div>
                 <div style="flex: 1; text-align: center;">
-                  <video autoplay muted loop playsinline style="width: 100%; max-width: 120px; background: #000;">
+                  <video class="teaser-video" autoplay muted loop playsinline style="width: 100%; max-width: 120px; background: #000;">
                     <source src="static/videos/cream_8_ours.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
                 </div>
                 <div style="flex: 1; text-align: center;">
-                  <video autoplay muted loop playsinline style="width: 100%; max-width: 120px; background: #000;">
+                  <video class="teaser-video" autoplay muted loop playsinline style="width: 100%; max-width: 120px; background: #000;">
                     <source src="static/videos/cream_8_gic.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
                 </div>
                 <div style="flex: 1; text-align: center;">
-                  <video autoplay muted loop playsinline style="width: 100%; max-width: 120px; background: #000;">
+                  <video class="teaser-video" autoplay muted loop playsinline style="width: 100%; max-width: 120px; background: #000;">
                     <source src="static/videos/cream_8_sg.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
@@ -479,172 +479,171 @@
 			Each model was trained on the first 20 frames of each 30-frame sequence.
 		</h2>
 
-      <div class="columns is-variable is-4 is-multiline is-gapless">
+      <div class="columns is-variable is-4 is-multiline is-gapless sync-row">
         <div class="column is-one-quarter has-text-centered">
           <p class="title is-5 is-marginless">Ground Truth</p>
-          <video autoplay controls muted loop style="width: 300px; margin-top: 0.25rem;">
+          <video class="sync-video" autoplay controls muted loop style="width: 300px; margin-top: 0.25rem;">
             <source src="static/videos/torus_6.mp4" type="video/mp4">
           </video>
         </div>
         <div class="column is-one-quarter has-text-centered">
           <p class="title is-5 is-marginless">ProJo4D (Ours)</p>
-          <video autoplay controls muted loop style="width: 120%; margin-top: 0.25rem;">
+          <video class="sync-video" autoplay controls muted loop style="width: 120%; margin-top: 0.25rem;">
             <source src="static/videos/torus_6_ours.mp4" type="video/mp4">
           </video>
         </div>
         <div class="column is-one-quarter has-text-centered">
           <p class="title is-5 is-marginless">GIC</p>
-          <video autoplay controls muted loop style="width: 120%; margin-top: 0.25rem;">
+          <video class="sync-video" autoplay controls muted loop style="width: 120%; margin-top: 0.25rem;">
             <source src="static/videos/torus_6_gic.mp4" type="video/mp4">
           </video>
         </div>
         <div class="column is-one-quarter has-text-centered">
           <p class="title is-5 is-marginless">Spring-Gaus</p>
-          <video autoplay controls muted loop style="width: 120%; margin-top: 0.25rem;">
+          <video class="sync-video" autoplay controls muted loop style="width: 120%; margin-top: 0.25rem;">
             <source src="static/videos/torus_6_sg.mp4" type="video/mp4">
           </video>
         </div>
 		</div>
 
-      	  <div class="columns is-variable is-4 is-multiline is-gapless" style="margin-top: -2rem;">
+      	  <div class="columns is-variable is-4 is-multiline is-gapless sync-row" style="margin-top: -2rem;">
 
         <div class="column is-one-quarter has-text-centered">
-          <video autoplay controls muted loop style="width: 300px; margin-top: 0.25rem;">
+          <video class="sync-video" autoplay controls muted loop style="width: 300px; margin-top: 0.25rem;">
             <source src="static/videos/apple_4.mp4" type="video/mp4">
           </video>
         </div>
         <div class="column is-one-quarter has-text-centered">
-          <video autoplay controls muted loop style="width: 120%; margin-top: 0.25rem;">
+          <video class="sync-video" autoplay controls muted loop style="width: 120%; margin-top: 0.25rem;">
             <source src="static/videos/apple_4_ours.mp4" type="video/mp4">
           </video>
         </div>
         <div class="column is-one-quarter has-text-centered">
-          <video autoplay controls muted loop style="width: 120%; margin-top: 0.25rem;">
+          <video class="sync-video" autoplay controls muted loop style="width: 120%; margin-top: 0.25rem;">
             <source src="static/videos/apple_4_gic.mp4" type="video/mp4">
           </video>
         </div>
         <div class="column is-one-quarter has-text-centered">
-          <video autoplay controls muted loop style="width: 120%; margin-top: 0.25rem;">
+          <video class="sync-video" autoplay controls muted loop style="width: 120%; margin-top: 0.25rem;">
             <source src="static/videos/apple_4_sg.mp4" type="video/mp4">
           </video>
         </div>
 		</div>
 
-      	  <div class="columns is-variable is-4 is-multiline is-gapless" style="margin-top: -2rem;">
+      	  <div class="columns is-variable is-4 is-multiline is-gapless sync-row" style="margin-top: -2rem;">
 
         <div class="column is-one-quarter has-text-centered">
-          <video autoplay controls muted loop style="width: 300px; margin-top: 0.25rem;">
+          <video class="sync-video" autoplay controls muted loop style="width: 300px; margin-top: 0.25rem;">
             <source src="static/videos/banana_2.mp4" type="video/mp4">
           </video>
         </div>
         <div class="column is-one-quarter has-text-centered">
-          <video autoplay controls muted loop style="width: 120%; margin-top: 0.25rem;">
+          <video class="sync-video" autoplay controls muted loop style="width: 120%; margin-top: 0.25rem;">
             <source src="static/videos/banana_2_ours.mp4" type="video/mp4">
           </video>
         </div>
         <div class="column is-one-quarter has-text-centered">
-          <video autoplay controls muted loop style="width: 120%; margin-top: 0.25rem;">
+          <video class="sync-video" autoplay controls muted loop style="width: 120%; margin-top: 0.25rem;">
             <source src="static/videos/banana_2_gic.mp4" type="video/mp4">
           </video>
         </div>
         <div class="column is-one-quarter has-text-centered">
-          <video autoplay controls muted loop style="width: 120%; margin-top: 0.25rem;">
+          <video class="sync-video" autoplay controls muted loop style="width: 120%; margin-top: 0.25rem;">
             <source src="static/videos/banana_2_sg.mp4" type="video/mp4">
           </video>
         </div>
 		</div>
 
-	  	  <div class="columns is-variable is-4 is-multiline is-gapless" style="margin-top: -2rem;">
+	  	  <div class="columns is-variable is-4 is-multiline is-gapless sync-row" style="margin-top: -2rem;">
 
         <div class="column is-one-quarter has-text-centered">
-          <video autoplay controls muted loop style="width: 300px; margin-top: 0.25rem;">
+          <video class="sync-video" autoplay controls muted loop style="width: 300px; margin-top: 0.25rem;">
             <source src="static/videos/chess_2.mp4" type="video/mp4">
           </video>
         </div>
         <div class="column is-one-quarter has-text-centered">
-          <video autoplay controls muted loop style="width: 120%; margin-top: 0.25rem;">
+          <video class="sync-video" autoplay controls muted loop style="width: 120%; margin-top: 0.25rem;">
             <source src="static/videos/chess_2_ours.mp4" type="video/mp4">
           </video>
         </div>
         <div class="column is-one-quarter has-text-centered">
-          <video autoplay controls muted loop style="width: 120%; margin-top: 0.25rem;">
+          <video class="sync-video" autoplay controls muted loop style="width: 120%; margin-top: 0.25rem;">
             <source src="static/videos/chess_2_gic.mp4" type="video/mp4">
           </video>
         </div>
         <div class="column is-one-quarter has-text-centered">
-          <video autoplay controls muted loop style="width: 120%; margin-top: 0.25rem;">
+          <video class="sync-video" autoplay controls muted loop style="width: 120%; margin-top: 0.25rem;">
             <source src="static/videos/chess_2_sg.mp4" type="video/mp4">
           </video>
         </div>
 		</div>
 
-	  	  <div class="columns is-variable is-4 is-multiline is-gapless" style="margin-top: -2rem;">
+	  	  <div class="columns is-variable is-4 is-multiline is-gapless sync-row" style="margin-top: -2rem;">
 
         <div class="column is-one-quarter has-text-centered">
-          <video autoplay controls muted loop style="width: 300px; margin-top: 0.25rem;">
+          <video class="sync-video" autoplay controls muted loop style="width: 300px; margin-top: 0.25rem;">
             <source src="static/videos/cream_3.mp4" type="video/mp4">
           </video>
         </div>
         <div class="column is-one-quarter has-text-centered">
-          <video autoplay controls muted loop style="width: 120%; margin-top: 0.25rem;">
+          <video class="sync-video" autoplay controls muted loop style="width: 120%; margin-top: 0.25rem;">
             <source src="static/videos/cream_3_ours.mp4" type="video/mp4">
           </video>
         </div>
         <div class="column is-one-quarter has-text-centered">
-          <video autoplay controls muted loop style="width: 120%; margin-top: 0.25rem;">
+          <video class="sync-video" autoplay controls muted loop style="width: 120%; margin-top: 0.25rem;">
             <source src="static/videos/cream_3_gic.mp4" type="video/mp4">
           </video>
         </div>
         <div class="column is-one-quarter has-text-centered">
-          <video autoplay controls muted loop style="width: 120%; margin-top: 0.25rem;">
+          <video class="sync-video" autoplay controls muted loop style="width: 120%; margin-top: 0.25rem;">
             <source src="static/videos/cream_3_sg.mp4" type="video/mp4">
           </video>
         </div>
 		</div>
 	  
-	  <div class="columns is-variable is-4 is-multiline is-gapless" style="margin-top: -2rem;">
+	  <div class="columns is-variable is-4 is-multiline is-gapless sync-row" style="margin-top: -2rem;">
 
         <div class="column is-one-quarter has-text-centered">
-          <video autoplay controls muted loop style="width: 300px; margin-top: 0.25rem;">
+          <video class="sync-video" autoplay controls muted loop style="width: 300px; margin-top: 0.25rem;">
             <source src="static/videos/cross_7.mp4" type="video/mp4">
           </video>
         </div>
         <div class="column is-one-quarter has-text-centered">
-          <video autoplay controls muted loop style="width: 120%; margin-top: 0.25rem;">
+          <video class="sync-video" autoplay controls muted loop style="width: 120%; margin-top: 0.25rem;">
             <source src="static/videos/cross_7_ours.mp4" type="video/mp4">
           </video>
         </div>
         <div class="column is-one-quarter has-text-centered">
-          <video autoplay controls muted loop style="width: 120%; margin-top: 0.25rem;">
+          <video class="sync-video" autoplay controls muted loop style="width: 120%; margin-top: 0.25rem;">
             <source src="static/videos/cross_7_gic.mp4" type="video/mp4">
           </video>
         </div>
         <div class="column is-one-quarter has-text-centered">
-          <video autoplay controls muted loop style="width: 120%; margin-top: 0.25rem;">
+          <video class="sync-video" autoplay controls muted loop style="width: 120%; margin-top: 0.25rem;">
             <source src="static/videos/cross_7_sg.mp4" type="video/mp4">
           </video>
         </div>
 		</div>
 	  
-
-	  <div class="columns is-variable is-4 is-multiline is-gapless" style="margin-top: -2rem;">
+	  <div class="columns is-variable is-4 is-multiline is-gapless sync-row" style="margin-top: -2rem;">
         <div class="column is-one-quarter has-text-centered">
-          <video autoplay controls muted loop style="width: 300px; margin-top: 0.25rem;">
+          <video class="sync-video" autoplay controls muted loop style="width: 300px; margin-top: 0.25rem;">
             <source src="static/videos/paste_8.mp4" type="video/mp4">
           </video>
         </div>
         <div class="column is-one-quarter has-text-centered">
-          <video autoplay controls muted loop style="width: 120%; margin-top: 0.25rem;">
+          <video class="sync-video" autoplay controls muted loop style="width: 120%; margin-top: 0.25rem;">
             <source src="static/videos/paste_8_ours.mp4" type="video/mp4">
           </video>
         </div>
         <div class="column is-one-quarter has-text-centered">
-          <video autoplay controls muted loop style="width: 120%; margin-top: 0.25rem;">
+          <video class="sync-video" autoplay controls muted loop style="width: 120%; margin-top: 0.25rem;">
             <source src="static/videos/paste_8_gic.mp4" type="video/mp4">
           </video>
         </div>
         <div class="column is-one-quarter has-text-centered">
-          <video autoplay controls muted loop style="width: 120%; margin-top: 0.25rem;">
+          <video class="sync-video" autoplay controls muted loop style="width: 120%; margin-top: 0.25rem;">
             <source src="static/videos/paste_8_sg.mp4" type="video/mp4">
           </video>
         </div>
@@ -1726,6 +1725,70 @@
 				  });
 				};
 			  </script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const teaserVideos = document.querySelectorAll('.teaser-video');
+        teaserVideos.forEach((video) => {
+          video.addEventListener('play', () => {
+            teaserVideos.forEach((v) => {
+              if (v !== video) {
+                v.currentTime = video.currentTime;
+                v.play();
+              }
+            });
+          });
+          video.addEventListener('pause', () => {
+            teaserVideos.forEach((v) => {
+              if (v !== video) {
+                v.pause();
+              }
+            });
+          });
+          video.addEventListener('timeupdate', () => {
+            teaserVideos.forEach((v) => {
+              if (v !== video && Math.abs(v.currentTime - video.currentTime) > 0.1) {
+                v.currentTime = video.currentTime;
+              }
+            });
+          });
+        });
+      });
+    </script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // For each row group of visualization videos
+        const syncRows = document.querySelectorAll('.sync-row');
+        syncRows.forEach((row) => {
+          const videos = row.querySelectorAll('.sync-video');
+          videos.forEach((video) => {
+            video.addEventListener('play', () => {
+              videos.forEach((v) => {
+                if (v !== video) {
+                  v.currentTime = video.currentTime;
+                  v.play();
+                }
+              });
+            });
+            video.addEventListener('pause', () => {
+              videos.forEach((v) => {
+                if (v !== video) {
+                  v.pause();
+                }
+              });
+            });
+            video.addEventListener('timeupdate', () => {
+              videos.forEach((v) => {
+                if (v !== video && Math.abs(v.currentTime - video.currentTime) > 0.1) {
+                  v.currentTime = video.currentTime;
+                }
+              });
+            });
+          });
+        });
+      });
+    </script>
 
 </body>
 </html>
