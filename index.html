@@ -69,6 +69,16 @@
       font-size: 1rem;
     }
   </style>
+  <style>
+    @media (max-width: 600px) {
+      .novel-label {
+        display: none;
+      }
+      .label-placeholder {
+        display: none;
+      }
+    }
+  </style>
 
 </head>
 <body>
@@ -138,7 +148,7 @@
         <div style="flex: 3; display: flex; flex-direction: column;">
           <!-- Column headers -->
           <div style="display: flex; margin-bottom: 0.5rem;">
-            <div style="width: 150px;"></div> <!-- placeholder for row labels alignment -->
+            <div class="label-placeholder" style="width: 150px;"></div> <!-- placeholder for row labels alignment -->
             <div style="flex: 1; text-align: center; font-weight: bold;">Ground Truth</div>
             <div style="flex: 1; text-align: center; font-weight: bold;">ProJo4D</div>
             <div style="flex: 1; text-align: center; font-weight: bold;">GIC</div>
@@ -147,7 +157,7 @@
 
           <!-- Combined rows: “Novel-view Rendering” covers both rows -->
           <div style="display: flex; align-items: center;">
-            <div style="width: 150px; font-weight: bold; text-align: right; padding-right: 0.5rem;">
+            <div class="novel-label" style="width: 150px; font-weight: bold; text-align: right; padding-right: 0.5rem;">
               Novel-view Rendering
             </div>
             <div style="flex: 1; display: flex; flex-direction: column;">
