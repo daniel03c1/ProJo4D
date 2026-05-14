@@ -533,6 +533,20 @@ table.metrics .na {
   color: var(--muted-2);
 }
 
+/* Mean column — placed right after the method name. Subtly emphasized so it
+   reads as the summary, separated from per-object columns by a hair rule. */
+table.metrics .mean {
+  color: var(--ink);
+  border-right: 1px solid var(--rule);
+  padding-right: var(--s-4);
+}
+table.metrics tbody td.mean {
+  font-weight: 500;
+}
+table.metrics thead th.mean {
+  color: var(--ink);
+}
+
 table.metrics tbody tr:last-child td,
 table.metrics tbody tr:last-child th {
   border-bottom: 0;

@@ -69,7 +69,7 @@
 
   <div class="btn-row">
     <a class="btn" href="https://openreview.net/forum?id=pqvVrqlXCZ" target="_blank" rel="noopener">OpenReview</a>
-    <a class="btn" href="https://arxiv.org/abs/2506.05317" target="_blank" rel="noopener">arXiv</a>
+    <!-- <a class="btn" href="https://arxiv.org/abs/2506.05317" target="_blank" rel="noopener">arXiv</a> -->
     <!-- <a class="btn" href="https://github.com/daniel03c1/ProJo4D" target="_blank" rel="noopener">Code</a> -->
   </div>
 </header>
@@ -154,6 +154,7 @@
                 <tr>
                   <th></th>
                   <th>Method</th>
+                  <th class="mean">mean</th>
                   <th>apple</th>
                   <th>banana</th>
                   <th>chess</th>
@@ -161,7 +162,6 @@
                   <th>cross</th>
                   <th>paste</th>
                   <th>torus</th>
-                  <th>mean</th>
                 </tr>
               </thead>
               <tbody>
@@ -169,98 +169,118 @@
                 <tr class="metric-start">
                   <th rowspan="4">CD &darr;</th>
                   <td>Spring-Gaus</td>
-                  <td>12.12</td><td>51.35</td><td>3.68</td><td>2.97</td><td>40.30</td><td>73.08</td><td>15.00</td><td>26.93</td>
+                  <td class="mean">26.93</td>
+                  <td>12.12</td><td>51.35</td><td>3.68</td><td>2.97</td><td>40.30</td><td>73.08</td><td>15.00</td>
                 </tr>
                 <tr>
                   <td>GIC</td>
-                  <td>2.13</td><td>8.37</td><td>7.51</td><td>8.16</td><td>2.51</td><td>81.24</td><td>2.81</td><td>16.11</td>
+                  <td class="mean">16.11</td>
+                  <td>2.13</td><td>8.37</td><td>7.51</td><td>8.16</td><td>2.51</td><td>81.24</td><td>2.81</td>
                 </tr>
                 <tr>
                   <td>MASIV</td>
-                  <td>1.02</td><td>2.23</td><td>5.15</td><td>2.42</td><td>4.75</td><td>2.33</td><td>1.51</td><td>2.77</td>
+                  <td class="mean">2.77</td>
+                  <td>1.02</td><td>2.23</td><td>5.15</td><td>2.42</td><td>4.75</td><td>2.33</td><td>1.51</td>
                 </tr>
                 <tr>
                   <td>GIC + ProJo4D</td>
-                  <td><strong>0.19</strong></td><td><strong>0.12</strong></td><td><strong>1.37</strong></td><td><strong>1.54</strong></td><td><strong>0.38</strong></td><td><strong>6.93</strong></td><td><strong>0.65</strong></td><td><strong>1.60</strong></td>
+                  <td class="mean"><strong>1.60</strong></td>
+                  <td><strong>0.19</strong></td><td><strong>0.12</strong></td><td><strong>1.37</strong></td><td><strong>1.54</strong></td><td><strong>0.38</strong></td><td><strong>6.93</strong></td><td><strong>0.65</strong></td>
                 </tr>
 
                 <!-- EMD -->
                 <tr class="metric-start">
                   <th rowspan="4">EMD &darr;</th>
                   <td>Spring-Gaus</td>
-                  <td>0.170</td><td>0.223</td><td>0.097</td><td>0.101</td><td>0.232</td><td>0.248</td><td>0.177</td><td>0.178</td>
+                  <td class="mean">0.178</td>
+                  <td>0.170</td><td>0.223</td><td>0.097</td><td>0.101</td><td>0.232</td><td>0.248</td><td>0.177</td>
                 </tr>
                 <tr>
                   <td>GIC</td>
-                  <td>0.090</td><td>0.106</td><td>0.139</td><td>0.135</td><td>0.084</td><td>0.263</td><td>0.081</td><td>0.128</td>
+                  <td class="mean">0.128</td>
+                  <td>0.090</td><td>0.106</td><td>0.139</td><td>0.135</td><td>0.084</td><td>0.263</td><td>0.081</td>
                 </tr>
                 <tr>
                   <td>MASIV</td>
-                  <td>0.053</td><td>0.051</td><td>0.124</td><td>0.088</td><td>0.102</td><td>0.110</td><td>0.046</td><td>0.082</td>
+                  <td class="mean">0.082</td>
+                  <td>0.053</td><td>0.051</td><td>0.124</td><td>0.088</td><td>0.102</td><td>0.110</td><td>0.046</td>
                 </tr>
                 <tr>
                   <td>GIC + ProJo4D</td>
-                  <td><strong>0.054</strong></td><td><strong>0.024</strong></td><td><strong>0.066</strong></td><td><strong>0.052</strong></td><td><strong>0.031</strong></td><td><strong>0.142</strong></td><td><strong>0.031</strong></td><td><strong>0.057</strong></td>
+                  <td class="mean"><strong>0.057</strong></td>
+                  <td><strong>0.054</strong></td><td><strong>0.024</strong></td><td><strong>0.066</strong></td><td><strong>0.052</strong></td><td><strong>0.031</strong></td><td><strong>0.142</strong></td><td><strong>0.031</strong></td>
                 </tr>
 
                 <!-- PSNR -->
                 <tr class="metric-start">
                   <th rowspan="4">PSNR &uarr;</th>
                   <td>Spring-Gaus</td>
-                  <td>17.03</td><td>15.79</td><td>13.85</td><td>14.62</td><td>11.24</td><td>10.94</td><td>13.01</td><td>13.78</td>
+                  <td class="mean">13.78</td>
+                  <td>17.03</td><td>15.79</td><td>13.85</td><td>14.62</td><td>11.24</td><td>10.94</td><td>13.01</td>
                 </tr>
                 <tr>
                   <td>GIC</td>
-                  <td>20.52</td><td>21.84</td><td>14.87</td><td>13.93</td><td>22.51</td><td>12.41</td><td>17.00</td><td>17.58</td>
+                  <td class="mean">17.58</td>
+                  <td>20.52</td><td>21.84</td><td>14.87</td><td>13.93</td><td>22.51</td><td>12.41</td><td>17.00</td>
                 </tr>
                 <tr>
                   <td>MASIV</td>
-                  <td>21.77</td><td>24.07</td><td>15.05</td><td>16.74</td><td>21.67</td><td>15.94</td><td>18.64</td><td>19.13</td>
+                  <td class="mean">19.13</td>
+                  <td>21.77</td><td>24.07</td><td>15.05</td><td>16.74</td><td>21.67</td><td>15.94</td><td>18.64</td>
                 </tr>
                 <tr>
                   <td>GIC + ProJo4D</td>
-                  <td><strong>27.10</strong></td><td><strong>28.65</strong></td><td><strong>17.96</strong></td><td><strong>18.76</strong></td><td><strong>28.09</strong></td><td><strong>15.20</strong></td><td><strong>20.35</strong></td><td><strong>22.30</strong></td>
+                  <td class="mean"><strong>22.30</strong></td>
+                  <td><strong>27.10</strong></td><td><strong>28.65</strong></td><td><strong>17.96</strong></td><td><strong>18.76</strong></td><td><strong>28.09</strong></td><td><strong>15.20</strong></td><td><strong>20.35</strong></td>
                 </tr>
 
                 <!-- SSIM -->
                 <tr class="metric-start">
                   <th rowspan="4">SSIM &uarr;</th>
                   <td>Spring-Gaus</td>
-                  <td>0.790</td><td>0.825</td><td>0.792</td><td>0.796</td><td>0.819</td><td>0.737</td><td>0.831</td><td>0.799</td>
+                  <td class="mean">0.799</td>
+                  <td>0.790</td><td>0.825</td><td>0.792</td><td>0.796</td><td>0.819</td><td>0.737</td><td>0.831</td>
                 </tr>
                 <tr>
                   <td>GIC</td>
-                  <td>0.868</td><td>0.910</td><td>0.826</td><td>0.795</td><td>0.889</td><td>0.772</td><td>0.892</td><td>0.850</td>
+                  <td class="mean">0.850</td>
+                  <td>0.868</td><td>0.910</td><td>0.826</td><td>0.795</td><td>0.889</td><td>0.772</td><td>0.892</td>
                 </tr>
                 <tr>
                   <td>MASIV</td>
-                  <td>0.884</td><td>0.930</td><td>0.826</td><td>0.849</td><td>0.890</td><td>0.852</td><td>0.922</td><td>0.879</td>
+                  <td class="mean">0.879</td>
+                  <td>0.884</td><td>0.930</td><td>0.826</td><td>0.849</td><td>0.890</td><td>0.852</td><td>0.922</td>
                 </tr>
                 <tr>
                   <td>GIC + ProJo4D</td>
-                  <td><strong>0.930</strong></td><td><strong>0.959</strong></td><td><strong>0.886</strong></td><td><strong>0.885</strong></td><td><strong>0.943</strong></td><td><strong>0.852</strong></td><td><strong>0.933</strong></td><td><strong>0.913</strong></td>
+                  <td class="mean"><strong>0.913</strong></td>
+                  <td><strong>0.930</strong></td><td><strong>0.959</strong></td><td><strong>0.886</strong></td><td><strong>0.885</strong></td><td><strong>0.943</strong></td><td><strong>0.852</strong></td><td><strong>0.933</strong></td>
                 </tr>
 
                 <!-- MAE log E -->
                 <tr class="metric-start">
                   <th rowspan="2">MAE log E &darr;</th>
                   <td>GIC</td>
-                  <td>0.1840</td><td>0.4639</td><td>0.1807</td><td>0.0838</td><td>0.3239</td><td><strong>0.1380</strong></td><td>0.2436</td><td>0.2311</td>
+                  <td class="mean">0.2311</td>
+                  <td>0.1840</td><td>0.4639</td><td>0.1807</td><td>0.0838</td><td>0.3239</td><td><strong>0.1380</strong></td><td>0.2436</td>
                 </tr>
                 <tr>
                   <td>GIC + ProJo4D</td>
-                  <td><strong>0.0633</strong></td><td><strong>0.1519</strong></td><td><strong>0.0326</strong></td><td><strong>0.0336</strong></td><td><strong>0.0469</strong></td><td>0.1705</td><td><strong>0.2315</strong></td><td><strong>0.1043</strong></td>
+                  <td class="mean"><strong>0.1043</strong></td>
+                  <td><strong>0.0633</strong></td><td><strong>0.1519</strong></td><td><strong>0.0326</strong></td><td><strong>0.0336</strong></td><td><strong>0.0469</strong></td><td>0.1705</td><td><strong>0.2315</strong></td>
                 </tr>
 
                 <!-- MAE nu -->
                 <tr class="metric-start">
                   <th rowspan="2">MAE &nu; &darr;</th>
                   <td>GIC</td>
-                  <td>0.1439</td><td><strong>0.1049</strong></td><td>0.0622</td><td>0.1407</td><td>0.0955</td><td>0.2209</td><td>0.4851</td><td>0.1790</td>
+                  <td class="mean">0.1790</td>
+                  <td>0.1439</td><td><strong>0.1049</strong></td><td>0.0622</td><td>0.1407</td><td>0.0955</td><td>0.2209</td><td>0.4851</td>
                 </tr>
                 <tr>
                   <td>GIC + ProJo4D</td>
-                  <td><strong>0.0817</strong></td><td>0.2237</td><td><strong>0.0222</strong></td><td><strong>0.0295</strong></td><td><strong>0.0307</strong></td><td><strong>0.0928</strong></td><td><strong>0.1569</strong></td><td><strong>0.0911</strong></td>
+                  <td class="mean"><strong>0.0911</strong></td>
+                  <td><strong>0.0817</strong></td><td>0.2237</td><td><strong>0.0222</strong></td><td><strong>0.0295</strong></td><td><strong>0.0307</strong></td><td><strong>0.0928</strong></td><td><strong>0.1569</strong></td>
                 </tr>
               </tbody>
             </table>
@@ -602,12 +622,12 @@
                 <tr>
                   <th></th>
                   <th>Method</th>
+                  <th class="mean">mean</th>
                   <th>bun</th>
                   <th>burger</th>
                   <th>dog</th>
                   <th>pig</th>
                   <th>potato</th>
-                  <th>mean</th>
                 </tr>
               </thead>
               <tbody>
@@ -615,30 +635,36 @@
                 <tr class="metric-start">
                   <th rowspan="3">PSNR &uarr;</th>
                   <td>Spring-Gaus</td>
-                  <td>26.79</td><td>35.13</td><td>30.31</td><td>31.95</td><td>28.96</td><td>30.63</td>
+                  <td class="mean">30.63</td>
+                  <td>26.79</td><td>35.13</td><td>30.31</td><td>31.95</td><td>28.96</td>
                 </tr>
                 <tr>
                   <td>GIC</td>
-                  <td>32.14</td><td>36.89</td><td>33.35</td><td>32.30</td><td>35.02</td><td>34.05</td>
+                  <td class="mean">34.05</td>
+                  <td>32.14</td><td>36.89</td><td>33.35</td><td>32.30</td><td>35.02</td>
                 </tr>
                 <tr>
                   <td>GIC + ProJo4D</td>
-                  <td><strong>37.35</strong></td><td><strong>39.01</strong></td><td><strong>36.07</strong></td><td><strong>38.90</strong></td><td><strong>40.18</strong></td><td><strong>38.30</strong></td>
+                  <td class="mean"><strong>38.30</strong></td>
+                  <td><strong>37.35</strong></td><td><strong>39.01</strong></td><td><strong>36.07</strong></td><td><strong>38.90</strong></td><td><strong>40.18</strong></td>
                 </tr>
 
                 <!-- SSIM -->
                 <tr class="metric-start">
                   <th rowspan="3">SSIM &uarr;</th>
                   <td>Spring-Gaus</td>
-                  <td>0.986</td><td>0.995</td><td>0.993</td><td>0.994</td><td>0.989</td><td>0.991</td>
+                  <td class="mean">0.991</td>
+                  <td>0.986</td><td>0.995</td><td>0.993</td><td>0.994</td><td>0.989</td>
                 </tr>
                 <tr>
                   <td>GIC</td>
-                  <td>0.994</td><td>0.995</td><td>0.995</td><td>0.996</td><td>0.995</td><td>0.995</td>
+                  <td class="mean">0.995</td>
+                  <td>0.994</td><td>0.995</td><td>0.995</td><td>0.996</td><td>0.995</td>
                 </tr>
                 <tr>
                   <td>GIC + ProJo4D</td>
-                  <td><strong>0.997</strong></td><td><strong>0.996</strong></td><td><strong>0.996</strong></td><td><strong>0.997</strong></td><td><strong>0.997</strong></td><td><strong>0.996</strong></td>
+                  <td class="mean"><strong>0.996</strong></td>
+                  <td><strong>0.997</strong></td><td><strong>0.996</strong></td><td><strong>0.996</strong></td><td><strong>0.997</strong></td><td><strong>0.997</strong></td>
                 </tr>
               </tbody>
             </table>
